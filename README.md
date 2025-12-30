@@ -1,10 +1,12 @@
 # ComfyUI-PainterQwenImageEdit 本节点由抖音博主：绘画小子 制作
 
 **Qwen多图编辑增强节点** | 支持8图输入 · 双条件输出 · 背景层优先
+<img width="2708" height="1072" alt="image" src="https://github.com/user-attachments/assets/5a3056da-16ca-46fd-9645-f5e77ef0353e" />
 
 ---
 
 ## 功能特点
+<img width="2144" height="756" alt="image" src="https://github.com/user-attachments/assets/553cb7b0-0d34-4a81-9643-4a3c8256bede" />
 
 ### 🎨 **八图协同编辑**
 - **1张背景图** + **7张叠加图**的完整工作流程
