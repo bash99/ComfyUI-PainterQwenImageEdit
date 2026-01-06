@@ -1,10 +1,12 @@
 #  此2个节点由抖音博主：绘画小子 制作
 
-#  1，ComfyUI-PainterQwenImageEditPlus
+#  1，ComfyUI-PainterQwenImageEditPlus 编辑图片无像素偏移
 
 <img width="1811" height="802" alt="image" src="https://github.com/user-attachments/assets/0ddf26af-aa7f-4b74-8226-28ecb134d76d" />
 
-基于Qwen-image-2511的图像编辑自定义节点，专为ComfyUI设计，提供像素级精准编辑和局部遮罩重绘功能。
+
+# 基于Qwen-image-2511的图像编辑自定义节点，专为ComfyUI设计，提供像素级精准编辑和局部遮罩重绘功能。
+
 <img width="2590" height="1360" alt="image" src="https://github.com/user-attachments/assets/35eab8f9-f90b-43c6-93cd-ef8c6267b6df" />
 
 <img width="2468" height="1169" alt="image" src="https://github.com/user-attachments/assets/7f65122c-817a-4f82-b483-4155eea32842" />
