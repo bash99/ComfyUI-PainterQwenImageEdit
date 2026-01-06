@@ -4,7 +4,7 @@
 
 <img width="1811" height="802" alt="image" src="https://github.com/user-attachments/assets/0ddf26af-aa7f-4b74-8226-28ecb134d76d" />
 
-基于Qwen2.5-VL的图像编辑自定义节点，专为ComfyUI设计，提供像素级精准编辑和局部遮罩重绘功能。
+基于Qwen-image-2511的图像编辑自定义节点，专为ComfyUI设计，提供像素级精准编辑和局部遮罩重绘功能。
 <img width="2590" height="1360" alt="image" src="https://github.com/user-attachments/assets/35eab8f9-f90b-43c6-93cd-ef8c6267b6df" />
 
 <img width="2468" height="1169" alt="image" src="https://github.com/user-attachments/assets/7f65122c-817a-4f82-b483-4155eea32842" />
@@ -22,27 +22,6 @@
 
 增强版Qwen图像编辑节点，集成像素保护和遮罩编辑功能。
 
-#### 输入参数
-
-| 参数名 | 类型 | 必需 | 默认值 | 说明 |
-|--------|------|------|--------|------|
-| `clip` | CLIP | ✓ | - | CLIP模型 |
-| `prompt` | STRING | ✓ | - | 编辑指令文本 |
-| `vae` | VAE | ✗ | - | VAE模型（用于生成latent） |
-| `image1` | IMAGE | ✗ | - | 主图像（连接遮罩时必须） |
-| `image2` | IMAGE | ✗ | - | 参考图像2 |
-| `image3` | IMAGE | ✗ | - | 参考图像3 |
-| `image1_mask` | MASK | ✗ | - | 局部编辑遮罩（白色=编辑区域） |
-| `width` | INT | ✗ | 1024 | 输出宽度（需为8的倍数） |
-| `height` | INT | ✗ | 1024 | 输出高度（需为8的倍数） |
-
-#### 输出
-
-| 名称 | 类型 | 说明 |
-|------|------|------|
-| `positive` | CONDITIONING | 正向条件 |
-| `negative` | CONDITIONING | 负向条件（空） |
-| `latent` | LATENT | 潜空间数据（含遮罩信息） |
 
 ## 📝 使用示例
 
