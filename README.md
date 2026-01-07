@@ -7,9 +7,16 @@
 
 # 基于Qwen-image-2511的图像编辑自定义节点，专为ComfyUI设计，提供像素级精准编辑和局部遮罩重绘功能。
 
+
+![2026-01-06_18-00-25](https://github.com/user-attachments/assets/85890e0c-9a85-47c0-9ffd-66d882c5e318)
+
+
+
 <img width="2590" height="1360" alt="image" src="https://github.com/user-attachments/assets/35eab8f9-f90b-43c6-93cd-ef8c6267b6df" />
 
+
 <img width="2468" height="1169" alt="image" src="https://github.com/user-attachments/assets/7f65122c-817a-4f82-b483-4155eea32842" />
+
 
 ## ✨ 核心特性
 
