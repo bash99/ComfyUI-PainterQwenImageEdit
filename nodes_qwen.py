@@ -13,6 +13,7 @@ class PainterQwenImageEdit:
             "required": {
                 "clip": ("CLIP",),
                 "prompt": ("STRING", {"multiline": True, "dynamicPrompts": True}),
+                "negative_prompt": ("STRING", {"multiline": True, "dynamicPrompts": True, "default": ""}),
             },
             "optional": {
                 "vae": ("VAE",),
@@ -33,7 +34,7 @@ class PainterQwenImageEdit:
     CATEGORY = "advanced/conditioning"
     DESCRIPTION = "Qwen image editing with 8-image support, outputs positive and empty negative conditioning"
 
-    def encode(self, clip, prompt, vae=None, background=None, image1=None, image2=None, 
+    def encode(self, clip, prompt, negative_prompt="", vae=None, background=None, image1=None, image2=None,
                image3=None, image4=None, image5=None, image6=None, image7=None):
         ref_latents = []
         images = [background, image1, image2, image3, image4, image5, image6, image7]
@@ -70,12 +71,12 @@ class PainterQwenImageEdit:
         conditioning = clip.encode_from_tokens_scheduled(tokens)
         if len(ref_latents) > 0:
             conditioning = node_helpers.conditioning_set_values(conditioning, {"reference_latents": ref_latents}, append=True)
-        
-        negative_tokens = clip.tokenize("")
+
+        negative_tokens = clip.tokenize(negative_prompt)
         negative_conditioning = clip.encode_from_tokens_scheduled(negative_tokens)
         if len(ref_latents) > 0:
             negative_conditioning = node_helpers.conditioning_set_values(negative_conditioning, {"reference_latents": ref_latents}, append=True)
-            
+
         return (conditioning, negative_conditioning)
 
 
